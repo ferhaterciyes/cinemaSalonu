@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+    background-color: rgb(68, 64, 64);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.image{
+    width:400px;
+    border-radius: 10px;
+    box-shadow: -2px 5px 12px 6px rgba(0,0,0,0.75);
+    margin: 30px 0;
+
+}
+img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: -2px 5px 12px 6px rgba(0,0,0,0.75);
+
+}
+.seats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.seat{
+    color: rgb(27, 26, 26);
+    font-size: 30px;
+    transition: all .2s ease;
+
+}
+.reserved{
+    color: #fff;
+}
+.selected{
+    color: yellowgreen;
+}
+.seat:not(.reserved):hover{
+    scale: 1.2;
+
+}
+#movies{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    
+
+}
+
+
+.seats-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.seats-content .seat:hover{
+    scale: none;
+}
+
+
+p{
+    color: #fff;
+display: none;
+}
+p span{
+    color: yellow;
+}
+
+.open{
+    display: block;
+}
